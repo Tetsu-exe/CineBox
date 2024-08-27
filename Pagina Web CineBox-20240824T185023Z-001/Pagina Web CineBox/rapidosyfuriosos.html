@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre pelicula - CineBox</title>
+    <!-- Importacion de style.css para los estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!-- API de fontawesome para insertar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"/>
+    <link rel="icon" href="img/logopagina.png" type="image/png">
+</head>
+
+<header class="header_2">
+    <div class="logo">
+        <img src="img/Logo.png">
+    <!-- boton de menu de hamburguesas -->
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <!-- Barra de Navegación -->
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="contactos.html"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+            <li><a href="sobrenosotros.html"><i class="fa-solid fa-address-card"></i> Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+</header>
+<body class="fondo1">
+    
+<!---banner pelicula-->
+<section class="movie-banner">
+    <!--fondo img-->
+    <div class="m-banner-img">
+      <img src="img/furiososbanner.jpg" alt="">
+    </div>
+    <!--contenido del banner-->
+    <div class="banner-container">
+        <!---titulo--->
+        <div class="title-container">
+            <!--title-top===============-->
+            <div class="title-top">
+            </div>
+            <div class="movie-title">
+                <h1>RAPIDOS Y FURIOSOS X</h1>
+            </div>
+            <!--Mas sobre la peli-->
+            <div class="more-about-movie">
+                <span class="quality">Full HD</span>
+                <div class="rating">
+                    8.2 <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/171_Imdb_logo_logos-512.png" alt="imbd">
+                </div>
+            </div>
+            <!--idioma-->
+            <div class="language">
+                <span>Español</span>
+            </div>
+            <div>
+            </div>
+            <!--titulo del boton-->
+            <div class="title-bottom">
+                <!--categoria-->
+                <div class="category">
+                    <span>Accion</span> <span>Crimen</span> <span>Aventura</span>
+                    </span>
+                    <span>2023</span>
+                    <span>2h:06min</span>
+                </div>
+                <div class="sinopsis">
+                  <p>Dom Toretto y su familia se convierten en el objetivo del vengativo hijo del capo de las drogas Hernán Reyes</p>
+                </div>
+                <!--boton de trailer-->
+                <a href="#" class="watch-btn"><i class="fa-solid fa-play"></i> VER AHORA</a><br>
+                <a href="https://www.youtube.com/watch?v=sdNv9aUf900&pp=ygURcmFwaWRvcyB4IHRyYWlsZXI%3D" class="watch-btn"><i class="fa-solid fa-film"></i> TRAILER</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" ></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay:{
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer class="footer">
+  <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+          <img src="img/Logo.png" alt="CineBox Logo">
+      </div>
+      <!-- Sección de Enlaces -->
+      <div class="footer-links">
+          <div class="link-column">
+              <h4>Ayuda</h4>
+              <ul>
+                  <li><a href="#">Centro de Ayuda</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Política de Privacidad</a></li>
+                  <li><a href="#">Términos de Servicio</a></li>
+              </ul>
+          </div>
+      </div>
+      <!-- Derechos de Autor -->
+      <div class="footer-bottom">
+          <p>&copy; 2024 CineBox. Todos los derechos reservados.</p>
+      </div>
+  </div>
+</footer>
+    
+</body>
+</html>

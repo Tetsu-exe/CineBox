@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | CineBox</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="img/logopagina.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header para insertar la imagen en la barra de navegacion -->
+    <header class="header">
+      <div class="logo">
+        <img src="img/Logo.png">
+      <!-- boton de menu de hamburguesas -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fa fa-bars"></i>
+      </button>
+      <!-- Barra de Navegación -->
+      </div>
+      <nav class="navbar">
+          <ul class="nav-links">
+              <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+              <li><a href="contactos.html"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+              <li><a href="sobrenosotros.html"><i class="fa-solid fa-address-card"></i> Sobre Nosotros</a></li>
+          </ul>
+      </nav>
+  </header>
+  <br><br><br><br><br>
+
+<section class="contact-section">
+  <h2>Contáctanos</h2>
+  <div class="contact-container">
+      <!-- Formulario de Contacto -->
+      <form class="contact-form">
+          <input type="text" name="name" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo electrónico" required>
+          <input type="text" name="subject" placeholder="Asunto" required>
+          <textarea name="message" placeholder="Tu mensaje" required></textarea>
+          <button type="submit">Enviar Mensaje</button>
+      </form>
+
+      <!-- Información de Contacto -->
+      <div class="contact-info">
+          <p><i class="fas fa-phone"></i> Teléfono: +57 311 456 7892</p>
+          <p><i class="fas fa-envelope"></i> Correo: contacto@cinebox.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Cartagena de Indias</p>
+          
+          <!-- Redes Sociales -->
+          <div class="social-media">
+              <a href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-beat"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+<br><br>
+<footer class="footer">
+  <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+          <img src="img/Logo.png" alt="CineBox Logo">
+      </div>
+      <!-- Sección de Enlaces -->
+      <div class="footer-links">
+          <div class="link-column">
+              <h4>Ayuda</h4>
+              <ul>
+                  <li><a href="#">Centro de Ayuda</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Política de Privacidad</a></li>
+                  <li><a href="#">Términos de Servicio</a></li>
+              </ul>
+          </div>
+      </div>
+      <!-- Derechos de Autor -->
+      <div class="footer-bottom">
+          <p>&copy; 2024 CineBox. Todos los derechos reservados.</p>
+      </div>
+  </div>
+</footer>
+
+</html>
